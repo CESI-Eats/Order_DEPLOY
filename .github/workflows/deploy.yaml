@@ -14,4 +14,4 @@ jobs:
 
       - name: Helm Upgrade
         run: |
-          helm upgrade order-api-chart ./ -f ./values.yaml --install --namespace cesi-eats --create-namespace
+          helm upgrade order-api-chart ./ -f ./values.yaml --install --namespace cesi-eats --create-namespace --recreate-pods
