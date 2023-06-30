@@ -25,6 +25,6 @@ spec:
                 name: {{ .Values.app.name }}-env-secret
           env:
             - name: CESIEAT_COMMISSION
-              value: {{ .Values.commission.cesieat }}
+              value: "{{ .Values.commission.cesieat }}"
             - name: DELIVERYMAN_COMMISSION
-              value: {{ .Values.commission.deliveryman }}
+              value: "{{ .Values.commission.deliveryman }}"
